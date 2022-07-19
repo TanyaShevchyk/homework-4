@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        [type="text"]:focus {
+            outline: none;
+            border-color: rgb(0, 92, 200);
+        }
+
+        [type="email"]:focus {
+            outline: none;
+            border-color: rgb(0, 92, 200);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="create-new-account">
+        <h1 class="title">Create an Account</h1>
+        <form action="#" class="form" autocomplete="off">
+            <div class="name-container">
+                <label for="name" class="label">First Name</label>
+                <input type="text" name="name" class="input-field" autofocus>
+            </div>
+            <div class="surname-container">
+                <label for="surname" class="label">Last Name</label>
+                <input type="text" name="surname" class="input-field">
+            </div>
+            <div class="email-containar">
+                <label for="email" class="label">E-mail</label>
+                <input type="email" name="email" class="input-field">
+            </div>
+            <p>We'll never share your email with anyone else.</p>
+            <div class="sex-container">
+                <label><input type="radio" name="sex" class="radiobutton" checked>Male</label>
+                <label><input type="radio" name="sex" class="radiobutton">Female</label>
+            </div>
+            <div class="select-wrapper">
+                <label for="select" class="label">Country</label>
+                <select name="countries" class="select" id="select">
+                    <option value="Ukrain">Ukraine</option>
+                    <option value="Poland">Poland</option>
+                    <option value="USA">United States of America</option>
+                    <option value="Italy">Italy</option>
+                </select>
+            </div>
+            <div class="city-container">
+                <label for="city" class="label">City</label>
+                <input type="text" name="city" class="input-field">
+            </div>
+            <div class="action">
+                <button type="submit" class="button">Sign up</button>
+            </div>
+            <div class="terms">
+                <p>By clicking the 'Sign Up' button, you confirm that you accept our</p>
+                <p><a href="url" target="_blank">Terms of Use</a> and <a href="url" target="_blank">Privacy Policy</a>
+                </p>
+            </div>
+            <div class="log-in-container">
+                <p>Have an account? <a href="url" target="_blank">Log in</a></p>
+            </div>
+        </form>
+    </div>
+    <!-- Second form -->
+    <div class="users-profile">
+        <h1 class="title">Profile</h1>
+        <form action="#" class="form" autocomplete="off">
+            <div class="avatar">
+                <img src="img/avatar.png">
+                <div class="photo-container">
+                    <input type="file" class="input-field">
+                    <i class="camera-icon"></i>
+                </div>
+                <div class="delete-photo">
+                    <button type="submit" class="button"><img src="img/delete-button.png"></button>
+                </div>
+                <p>Up to 1 MB (300x300 px)</p>
+            </div>
+            <div class="name-container">
+                <label for="name" class="label">Name</label>
+                <input type="text" name="name" class="input-field">
+            </div>
+            <div class="email-containar">
+                <label for="email" class="label">E-mail</label>
+                <input type="email" name="email" class="input-field">
+            </div>
+            <div class="select-wrapper">
+                <label for="select" class="label">Country</label>
+                <select name="countries" class="select" id="select">
+                    <option value="Ukrain">Ukraine</option>
+                    <option value="Poland">Poland</option>
+                    <option value="USA">United States of America</option>
+                    <option value="Italy">Italy</option>
+                </select>
+            </div>
+            <div class="city-container">
+                <label for="city" class="label">City</label>
+                <input type="text" name="city" class="input-field">
+            </div>
+            <div class="zip-container">
+                <label for="zip" class="label">Zip code</label>
+                <input type="text" name="zip" class="input-fild">
+            </div>
+            <div class="phone-container">
+                <label for="phone" class="label">Phone Number</label>
+                <input type="tel" name="phone" class="input-fild">
+            </div>
+            <div class="action">
+                <button type="submit" class="button">Update</button>
+            </div>
+        </form>
+
+    </div>
+</body>
